@@ -1,0 +1,21 @@
+{
+  "name": "ecriture",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./css/input/main.scss:./css/main.css",
+    "sasscomp": "sass --watch ./css/input/main.scss:./css/main.css --style compressed",
+    "prefix": "postcss ./css/main.css --use autoprefixer -d ./css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wa-ran/P3_GILLES_Maxence.git"
+  },
+  "author": "Wa-ran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wa-ran/P3_GILLES_Maxence/issues"
+  },
+  "homepage": "https://github.com/Wa-ran/P3_GILLES_Maxence#readme"
+}
