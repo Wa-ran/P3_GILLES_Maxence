@@ -1,0 +1,52 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    font-size: 14px;
+    margin: 0;
+    @media screen and (min-width:768px) and (min-height:600px) {
+        font-size: 1.5em;
+    }
+}
+
+header {
+    background-color: $color-prime;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        @include text;
+        letter-spacing: -0.05em;
+    }
+}
+
+section {
+    height: max-content;
+    min-height: 100vh;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer {
+    background-color: $color-prime;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    bottom: 0;
+    div {
+        margin: 0.8rem 0.5rem;
+    }
+}
+
+a {
+    @include text;
+}

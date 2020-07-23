@@ -1,0 +1,11 @@
+$color-prime: #579C87;
+$color-text: #FDCB46;
+$color-menu: #353535;
+$box-shadow: #EFEFEF;
+
+@mixin text {
+    color: $color-text;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0.5em;
+    text-align: center;
+}

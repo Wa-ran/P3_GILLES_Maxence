@@ -1,0 +1,22 @@
+// index
+article {
+    height: 21rem;
+    width: 15rem;
+    margin: 2rem 1rem;
+    box-shadow: 1px 1px 3px $box-shadow, -1px 1px 3px $box-shadow, 1px -1px 3px $box-shadow, -1px -1px 3px $box-shadow;
+}
+
+.next {
+    height: 2.5rem;
+    width: 13rem;
+    background-color: $color-prime;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+    @include text;
+    display: block;
+    font-size: 1.3rem;
+    }
+}
