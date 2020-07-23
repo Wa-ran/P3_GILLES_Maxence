@@ -1,5 +1,19 @@
-h1 {
-  text-align: center;
+body {
+  margin: 0em;
+}
+
+header {
+  background-color: #579C87;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header h1 {
+  color: #FDCB46;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: -2px;
+  transform: scaleY(0.85);
 }
 
 /*# sourceMappingURL=main.css.map */

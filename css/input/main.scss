@@ -1,3 +1,25 @@
-h1 {
-    text-align: center;
+$color-prime: #579C87;
+$color-text: #FDCB46;
+$color-menu: #353535;
+
+@mixin text {
+    color: $color-text;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0em;
+}
+
+header {
+    background-color: $color-prime;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        @include text;
+        letter-spacing: -2px;
+        transform: scaleY(0.85);
+    }
 }
