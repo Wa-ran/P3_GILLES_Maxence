@@ -5,21 +5,40 @@ $color-menu: #353535;
 @mixin text {
     color: $color-text;
     font-family: 'Montserrat', sans-serif;
+    margin: 0.5em;
 }
 
 body {
-    margin: 0em;
+    font-size: 14px;
+    margin: 0;
+    @media screen and (min-width:768px) and (orientation:portrait) {
+        font-size: 1.5em;
+    }
 }
 
 header {
     background-color: $color-prime;
-    height: 10vh;
+    height: fit-content;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     h1 {
         @include text;
-        letter-spacing: -2px;
-        transform: scaleY(0.85);
+        letter-spacing: -0.05em;
+    }
+}
+
+footer {
+    background-color: $color-prime;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    div {
+        margin: auto 1em;
+        @include text;
     }
 }
