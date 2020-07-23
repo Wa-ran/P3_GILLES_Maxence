@@ -8,7 +8,7 @@ body {
 }
 @media screen and (min-width: 768px) and (min-height: 600px) {
   body {
-    font-size: 1.5em;
+    font-size: 1.5rem;
   }
 }
 
@@ -23,9 +23,9 @@ header {
 header h1 {
   color: #FDCB46;
   font-family: "Montserrat", sans-serif;
-  margin: 0.5em;
+  margin: 0.5rem;
   text-align: center;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.05rem;
 }
 
 section {
@@ -55,15 +55,15 @@ footer div {
 a {
   color: #FDCB46;
   font-family: "Montserrat", sans-serif;
-  margin: 0.5em;
+  margin: 0.5rem;
   text-align: center;
 }
 
 article {
-  height: 21rem;
-  width: 15rem;
-  margin: 2rem 1rem;
-  box-shadow: 1px 1px 3px #EFEFEF, -1px 1px 3px #EFEFEF, 1px -1px 3px #EFEFEF, -1px -1px 3px #EFEFEF;
+  height: 56vh;
+  width: 40vh;
+  margin: 1rem;
+  box-shadow: 1px 1px 5px #EFEFEF, -1px 1px 5px #EFEFEF, 1px -1px 5px #EFEFEF, -1px -1px 5px #EFEFEF;
 }
 
 .next {
@@ -71,6 +71,7 @@ article {
   width: 13rem;
   background-color: #579C87;
   border-radius: 0.5rem;
+  margin: 1rem 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,7 +79,7 @@ article {
 .next p {
   color: #FDCB46;
   font-family: "Montserrat", sans-serif;
-  margin: 0.5em;
+  margin: 0.5rem;
   text-align: center;
   display: block;
   font-size: 1.3rem;

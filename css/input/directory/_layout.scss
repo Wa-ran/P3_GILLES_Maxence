@@ -1,9 +1,9 @@
 // index
 article {
-    height: 21rem;
-    width: 15rem;
-    margin: 2rem 1rem;
-    box-shadow: 1px 1px 3px $box-shadow, -1px 1px 3px $box-shadow, 1px -1px 3px $box-shadow, -1px -1px 3px $box-shadow;
+    height: 56vh;
+    width: 40vh;
+    margin: 1rem;
+    box-shadow: 1px 1px 5px $box-shadow, -1px 1px 5px $box-shadow, 1px -1px 5px $box-shadow, -1px -1px 5px $box-shadow;
 }
 
 .next {
@@ -11,6 +11,7 @@ article {
     width: 13rem;
     background-color: $color-prime;
     border-radius: 0.5rem;
+    margin: 1rem 100%;
     display: flex;
     justify-content: center;
     align-items: center;
