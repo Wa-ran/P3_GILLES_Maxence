@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body {
   height: 100%;
 }
@@ -83,6 +84,90 @@ article {
   text-align: center;
   display: block;
   font-size: 1.3rem;
+}
+
+.note-enchantée {
+  background: #FCDFDB;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.note-enchantée h2 {
+  display: block;
+  background-image: linear-gradient(90deg, #3C1218, #3C1218);
+  color: white;
+  text-shadow: 10px 10px 10px black;
+  font-family: "Devonshire", sans-serif;
+}
+.note-enchantée p {
+  display: block;
+  color: #3C1218;
+  font-family: "Itim", sans-serif;
+  font-size: 2.5rem;
+}
+
+.chic-française {
+  background: #FFF5FE;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.chic-française h2 {
+  display: block;
+  background-image: linear-gradient(90deg, #C77412, #905BFD);
+  color: white;
+  text-shadow: 10px 10px 10px black;
+  font-family: "Croissant One", sans-serif;
+}
+.chic-française p {
+  display: block;
+  color: #C77412;
+  font-family: "DM Serif Text", sans-serif;
+  font-size: 2.5rem;
+}
+
+.délice-papille {
+  background: #F9F9F9;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.délice-papille h2 {
+  display: block;
+  background-image: linear-gradient(90deg, #0632DF, #0B89FB);
+  color: white;
+  text-shadow: 10px 10px 10px black;
+  font-family: "Dancing Script", sans-serif;
+}
+.délice-papille p {
+  display: block;
+  color: #0632DF;
+  font-family: "Nanum Pen Script", sans-serif;
+  font-size: 2.5rem;
+}
+
+.palette-goût {
+  background: #FDFFFD;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.palette-goût h2 {
+  display: block;
+  background-image: linear-gradient(90deg, #3D9339, #BFFF7E);
+  color: white;
+  text-shadow: 10px 10px 10px black;
+  font-family: "Kaushan Script", sans-serif;
+}
+.palette-goût p {
+  display: block;
+  color: #3D9339;
+  font-family: "Nanum Pen Script", sans-serif;
+  font-size: 2.5rem;
 }
 
 /*# sourceMappingURL=main.css.map */

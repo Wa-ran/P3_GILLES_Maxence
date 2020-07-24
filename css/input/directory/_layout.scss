@@ -3,7 +3,7 @@ article {
     height: 56vh;
     width: 40vh;
     margin: 1rem;
-    box-shadow: 1px 1px 5px $box-shadow, -1px 1px 5px $box-shadow, 1px -1px 5px $box-shadow, -1px -1px 5px $box-shadow;
+    box-shadow: 1px 1px 5px $color-shadow, -1px 1px 5px $color-shadow, 1px -1px 5px $color-shadow, -1px -1px 5px $color-shadow;
 }
 
 .next {
@@ -21,3 +21,5 @@ article {
     font-size: 1.3rem;
     }
 }
+
+@include resto;

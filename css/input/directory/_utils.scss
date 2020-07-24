@@ -1,11 +1,67 @@
 $color-prime: #579C87;
 $color-text: #FDCB46;
-$color-menu: #353535;
-$box-shadow: #EFEFEF;
+$color-page: #353535;
+$color-shadow: #EFEFEF;
 
 @mixin text {
     color: $color-text;
     font-family: 'Montserrat', sans-serif;
     margin: 0.5rem;
     text-align: center;
+}
+
+$resto: (
+    note-enchantée: ( 
+        color-bg:#FCDFDB,
+        color-menu-1:#3C1218,
+        color-menu-2:#3C1218,
+        font-title:'Devonshire',
+        font-menu:'Itim',
+    ),
+    chic-française: ( 
+        color-bg:#FFF5FE,
+        color-menu-1:#C77412,
+        color-menu-2:#905BFD,
+        font-title:'Croissant One',
+        font-menu:'DM Serif Text',
+    ),
+    délice-papille: ( 
+        color-bg:#F9F9F9,
+        color-menu-1:#0632DF,
+        color-menu-2:#0B89FB,
+        font-title:'Dancing Script',
+        font-menu:'Nanum Pen Script',
+    ),
+    palette-goût: ( 
+        color-bg:#FDFFFD,
+        color-menu-1:#3D9339,
+        color-menu-2:#BFFF7E,
+        font-title:'Kaushan Script',
+        font-menu:'Nanum Pen Script',
+    ),
+);
+
+@mixin resto {
+    @each $name, $style in $resto {
+        .#{$name} {
+            background: map-get($style, color-bg);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h2 {
+                display: block;
+                background-image: linear-gradient(90deg, map-get($style, color-menu-1), map-get($style, color-menu-2));
+                color: rgba(255,255,255,1);
+                text-shadow: 10px 10px 10px rgba( #000000, 1);
+                font-family: map-get($style, font-title), sans-serif;
+            }
+            p {
+                display: block;
+                color: map-get($style, color-menu-1);
+                font-family: map-get($style, font-menu), sans-serif;
+                font-size: 2.5rem;
+            }
+        }
+    }
 }
