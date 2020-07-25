@@ -3,6 +3,7 @@ html, body {
 }
 
 body {
+    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     margin: 0;
     @media screen and (min-width:768px) and (min-height:600px) {
@@ -49,4 +50,5 @@ footer {
 
 a {
     @include text;
+    text-decoration: none;
 }

@@ -43,7 +43,7 @@ $resto: (
 
 @mixin resto {
     @each $name, $style in $resto {
-        .#{$name} {
+        ##{$name} {
             background: map-get($style, color-bg);
             text-align: center;
             display: flex;

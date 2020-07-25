@@ -4,6 +4,7 @@ html, body {
 }
 
 body {
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   margin: 0;
 }
@@ -58,6 +59,7 @@ a {
   font-family: "Montserrat", sans-serif;
   margin: 0.5rem;
   text-align: center;
+  text-decoration: none;
 }
 
 article {
@@ -67,7 +69,7 @@ article {
   box-shadow: 1px 1px 5px #EFEFEF, -1px 1px 5px #EFEFEF, 1px -1px 5px #EFEFEF, -1px -1px 5px #EFEFEF;
 }
 
-.next {
+#next {
   height: 2.5rem;
   background-color: #579C87;
   border-radius: 0.5rem;
@@ -76,7 +78,7 @@ article {
   justify-content: center;
   align-items: center;
 }
-.next p {
+#next p {
   color: #FDCB46;
   font-family: "Montserrat", sans-serif;
   margin: 0.5rem;
@@ -86,7 +88,7 @@ article {
   margin: 0 2rem;
 }
 
-.note-enchantée {
+#note-enchantée {
   background: #FCDFDB;
   text-align: center;
   display: flex;
@@ -94,7 +96,7 @@ article {
   justify-content: center;
   align-items: center;
 }
-.note-enchantée h2 {
+#note-enchantée h2 {
   font-size: 1.5rem;
   display: block;
   background: linear-gradient(90deg, #3C1218, #3C1218);
@@ -103,7 +105,7 @@ article {
   font-family: "Devonshire", sans-serif;
   margin: 0;
 }
-.note-enchantée p {
+#note-enchantée p {
   display: block;
   color: #3C1218;
   font-family: "Itim", sans-serif;
@@ -111,7 +113,7 @@ article {
   margin: 0;
 }
 
-.chic-française {
+#chic-française {
   background: #FFF5FE;
   text-align: center;
   display: flex;
@@ -119,7 +121,7 @@ article {
   justify-content: center;
   align-items: center;
 }
-.chic-française h2 {
+#chic-française h2 {
   font-size: 1.5rem;
   display: block;
   background: linear-gradient(90deg, #C77412, #905BFD);
@@ -128,7 +130,7 @@ article {
   font-family: "Croissant One", sans-serif;
   margin: 0;
 }
-.chic-française p {
+#chic-française p {
   display: block;
   color: #C77412;
   font-family: "DM Serif Text", sans-serif;
@@ -136,7 +138,7 @@ article {
   margin: 0;
 }
 
-.délice-papille {
+#délice-papille {
   background: #F9F9F9;
   text-align: center;
   display: flex;
@@ -144,7 +146,7 @@ article {
   justify-content: center;
   align-items: center;
 }
-.délice-papille h2 {
+#délice-papille h2 {
   font-size: 1.5rem;
   display: block;
   background: linear-gradient(90deg, #0632DF, #0B89FB);
@@ -153,7 +155,7 @@ article {
   font-family: "Dancing Script", sans-serif;
   margin: 0;
 }
-.délice-papille p {
+#délice-papille p {
   display: block;
   color: #0632DF;
   font-family: "Nanum Pen Script", sans-serif;
@@ -161,7 +163,7 @@ article {
   margin: 0;
 }
 
-.palette-goût {
+#palette-goût {
   background: #FDFFFD;
   text-align: center;
   display: flex;
@@ -169,7 +171,7 @@ article {
   justify-content: center;
   align-items: center;
 }
-.palette-goût h2 {
+#palette-goût h2 {
   font-size: 1.5rem;
   display: block;
   background: linear-gradient(90deg, #3D9339, #BFFF7E);
@@ -178,7 +180,7 @@ article {
   font-family: "Kaushan Script", sans-serif;
   margin: 0;
 }
-.palette-goût p {
+#palette-goût p {
   display: block;
   color: #3D9339;
   font-family: "Nanum Pen Script", sans-serif;
@@ -186,23 +188,35 @@ article {
   margin: 0;
 }
 
-.note-enchantée img {
+.pages {
+  flex-direction: column;
+  justify-content: start;
+}
+.pages > h2 {
+  margin-bottom: 0;
+}
+.pages article {
+  width: 80vw;
+  min-height: 75vh;
+}
+
+#note-enchantée img {
   width: 2.5rem;
 }
 
-.note-enchantée p {
+#note-enchantée p {
   font-style: italic;
 }
 
-.chic-française h2 {
+#chic-française h2 {
   font-size: 1rem;
 }
 
-.délice-papille p {
+#délice-papille p {
   font-style: italic;
 }
 
-.palette-goût p {
+#palette-goût p {
   font-style: italic;
 }
 

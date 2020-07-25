@@ -6,7 +6,7 @@ article {
     box-shadow: 1px 1px 5px $color-shadow, -1px 1px 5px $color-shadow, 1px -1px 5px $color-shadow, -1px -1px 5px $color-shadow;
 }
 
-.next {
+#next {
     height: 2.5rem;
     background-color: $color-prime;
     border-radius: 0.5rem;
@@ -24,21 +24,36 @@ article {
 
 @include resto;
 
-.note-enchantée img {
+.pages {
+    flex-direction: column;
+    justify-content: start;
+    > h2 {
+        margin-bottom: 0;
+    }
+    article {
+        width: 80vw;
+        min-height: 75vh;
+    }
+}
+
+#note-enchantée img {
     width: 2.5rem;
 }
-.note-enchantée p {
+#note-enchantée p {
     font-style: italic;
 }
 
-.chic-française h2 {
+
+#chic-française h2 {
     font-size: 1rem;
 }
 
-.délice-papille p {
+
+#délice-papille p {
     font-style: italic;
 }
 
-.palette-goût p {
+
+#palette-goût p {
     font-style: italic;
 }
