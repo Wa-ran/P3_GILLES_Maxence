@@ -6,7 +6,7 @@ article {
     box-shadow: 1px 1px 5px $color-shadow, -1px 1px 5px $color-shadow, 1px -1px 5px $color-shadow, -1px -1px 5px $color-shadow;
 }
 
-#next {
+.next {
     height: 2.5rem;
     background-color: $color-prime;
     border-radius: 0.5rem;
@@ -22,38 +22,151 @@ article {
     }
 }
 
+
 @include resto;
 
-.pages {
-    flex-direction: column;
-    justify-content: start;
-    > h2 {
-        margin-bottom: 0;
-    }
-    article {
-        width: 80vw;
-        min-height: 75vh;
-    }
-}
 
-#note-enchantée img {
+.note-enchantee img {
     width: 2.5rem;
 }
-#note-enchantée p {
+.note-enchantee p {
     font-style: italic;
 }
 
 
-#chic-française h2 {
+.chic-francaise h2 {
     font-size: 1rem;
 }
 
 
-#délice-papille p {
+.delice-papilles p {
     font-style: italic;
 }
 
 
-#palette-goût p {
+.palette-gout p {
     font-style: italic;
+}
+
+
+// Pages Resto
+.pages {
+    font-family: 'Kalam', sans-serif;
+    flex-direction: column;
+    justify-content: start;
+    >h2 {
+        font-family: 'Montserra', sans-serif;
+        margin-bottom: 1rem;
+    }
+    article {
+        width: 80vw;
+        min-height: 75vh;
+        height: fit-content;
+        margin: auto;
+        padding: 3rem 2%;
+        h2 {
+            font-size: 3em;
+        }
+        table {
+            padding-top: 2rem;
+            td {
+                font-size: 1.3em;
+                padding: 0.7rem;
+                text-align: left;
+                vertical-align: top;
+                width: 100%;
+            }
+            td:nth-child(1) {
+                padding-left: 3rem;
+                &[colspan] {
+                    padding-left: 1rem;
+                    font-weight: bold;
+                    font-size: 1.5em;
+                }
+            }
+            td:nth-child(2) {
+                font-size: 1.5em;
+                padding-right: 3rem;
+            }
+        }
+        .table--title {
+            text-align: center;
+            padding: 1rem 0;
+            padding-top: 2rem;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            > img {
+                height: 35%;
+                width: 35%;
+            }
+        }
+        @media screen and (max-width:500px) {
+            width: 90vw;
+            padding: 2rem 2%;
+            table {
+                padding: 0;
+                td {
+                    padding: 0.5rem;
+                }
+                td:nth-child(1) {
+                    padding-left: 1rem;
+                    &[colspan] {
+                        padding: 0;
+                    }
+                }
+                td:nth-child(2) {
+                    padding-right: 1rem;
+                }
+            }
+        }
+    }
+}
+
+.pages .note-enchantee {
+    > img {
+        width: 5rem;
+    }
+    h2 {
+        font-weight: normal;
+        font-family: 'Devonshire', sans-serif;
+    }
+    table tr td {
+        padding: 1rem;
+    }
+    .article--footer {
+        display: flex;
+        justify-content: flex-start;
+        font-size: 0.6em;
+        margin-top: 1rem;
+        img {
+            display: inline;
+            vertical-align: middle;
+        }
+    }
+}
+
+
+.pages .chic-francaise {
+    h2 {
+        font-size: 2em;
+    }
+    td {
+        font-family: 'DM Serif Text', sans-serif;
+    }
+    .table--title {
+        font-weight: normal;
+    }
+    &--table {
+        &__entree{
+            color: #C67412;
+        }
+        &__plat{
+            color: #A56799;
+        }
+        &__dessert{
+            color: #6E4CCC;
+        }
+    }
 }

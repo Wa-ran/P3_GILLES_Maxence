@@ -1,7 +1,7 @@
 $color-prime: #579C87;
 $color-text: #FDCB46;
 $color-page: #353535;
-$color-shadow: #EFEFEF;
+$color-shadow: #EDEDED;
 
 @mixin text {
     color: $color-text;
@@ -11,28 +11,29 @@ $color-shadow: #EFEFEF;
 }
 
 $resto: (
-    note-enchantée: ( 
+    note-enchantee: ( 
         color-bg:#FCDFDB,
         color-menu-1:#3C1218,
         color-menu-2:#3C1218,
         font-title:'Devonshire',
         font-menu:'Itim',
     ),
-    chic-française: ( 
+    chic-francaise: ( 
         color-bg:#FFF5FE,
-        color-menu-1:#C77412,
-        color-menu-2:#905BFD,
+        color-menu-1:#C67412,
+        color-menu-15:#A56799,
+        color-menu-2:#6E4CCC,
         font-title:'Croissant One',
         font-menu:'DM Serif Text',
     ),
-    délice-papille: ( 
-        color-bg:#F9F9F9,
-        color-menu-1:#0632DF,
-        color-menu-2:#0B89FB,
+    delice-papilles: ( 
+        color-bg:#EDEFEF,
+        color-menu-1:#0228DD,
+        color-menu-2:#229DF9,
         font-title:'Dancing Script',
         font-menu:'Nanum Pen Script',
     ),
-    palette-goût: ( 
+    palette-gout: ( 
         color-bg:#FDFFFD,
         color-menu-1:#3D9339,
         color-menu-2:#BFFF7E,
@@ -43,7 +44,7 @@ $resto: (
 
 @mixin resto {
     @each $name, $style in $resto {
-        ##{$name} {
+        .#{$name} {
             background: map-get($style, color-bg);
             text-align: center;
             display: flex;
@@ -58,6 +59,7 @@ $resto: (
                 -webkit-text-fill-color: transparent;
                 font-family: map-get($style, font-title), sans-serif;
                 margin: 0;
+                padding: 0.5rem;
             }
             p {
                 display: block;
