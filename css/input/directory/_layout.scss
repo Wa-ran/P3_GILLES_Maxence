@@ -4,9 +4,14 @@ article {
     width: 40vh;
     margin: 1rem;
     box-shadow: 1px 1px 5px $color-shadow, -1px 1px 5px $color-shadow, 1px -1px 5px $color-shadow, -1px -1px 5px $color-shadow;
+    @media (orientation: portrait) and (min-width: 768px) {
+        height: 56vw;
+        width: 40vw;
+    }
 }
 
 .next {
+    width: fit-content;
     height: 2.5rem;
     background-color: $color-prime;
     border-radius: 0.5rem;
@@ -17,7 +22,7 @@ article {
     p {
     @include text;
     display: block;
-    font-size: 1.3rem;
+    font-size: 1.3em;
     margin: 0 2rem;
     }
 }
@@ -27,15 +32,19 @@ article {
 
 
 .note-enchantee img {
-    width: 2.5rem;
+    width: 2.5em;
 }
 .note-enchantee p {
     font-style: italic;
+    font-size: 1.5em;
 }
 
 
 .chic-francaise h2 {
-    font-size: 1rem;
+    font-size: 1em;
+}
+.chic-francaise p {
+    font-size: 1.5em;
 }
 
 
@@ -65,24 +74,19 @@ article {
         margin: auto;
         padding: 3rem 2%;
         h2 {
-            font-size: 3em;
+            font-size: 2.5em;
         }
         table {
             padding-top: 2rem;
             td {
-                font-size: 1.3em;
+                font-size: 1.2em;
                 padding: 0.7rem;
                 text-align: left;
                 vertical-align: top;
-                width: 100%;
+                width: max-content;
             }
             td:nth-child(1) {
                 padding-left: 3rem;
-                &[colspan] {
-                    padding-left: 1rem;
-                    font-weight: bold;
-                    font-size: 1.5em;
-                }
             }
             td:nth-child(2) {
                 font-size: 1.5em;
@@ -90,16 +94,20 @@ article {
             }
         }
         .table--title {
-            text-align: center;
-            padding: 1rem 0;
-            padding-top: 2rem;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            > img {
-                height: 35%;
-                width: 35%;
+            >td {
+                font-weight: bold;
+                font-size: 1.2em;
+                >div {
+                    padding-top: 1em;
+                    width: 100%;
+                    text-align: center;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    img {
+                    width: 20vw;
+                    }
+                }
             }
         }
         @media screen and (max-width:500px) {
@@ -112,12 +120,14 @@ article {
                 }
                 td:nth-child(1) {
                     padding-left: 1rem;
-                    &[colspan] {
-                        padding: 0;
-                    }
                 }
                 td:nth-child(2) {
                     padding-right: 1rem;
+                }
+            }
+            .table--title {
+                td {
+                    padding: 0;
                 }
             }
         }
@@ -126,22 +136,27 @@ article {
 
 .pages .note-enchantee {
     > img {
-        width: 5rem;
+        width: 4em;
     }
     h2 {
         font-weight: normal;
         font-family: 'Devonshire', sans-serif;
+        padding-top: 0;
     }
     table tr td {
         padding: 1rem;
     }
+    .table--title>td {
+        font-size: 1.5em;
+    }
     .article--footer {
         display: flex;
         justify-content: flex-start;
-        font-size: 0.6em;
-        margin-top: 1rem;
+        font-size: 0.8em;
+        margin-top: 3em;
         img {
-            display: inline;
+            width: 1em;
+            display: inline-block;
             vertical-align: middle;
         }
     }
@@ -155,8 +170,9 @@ article {
     td {
         font-family: 'DM Serif Text', sans-serif;
     }
-    .table--title {
-        font-weight: normal;
+    .table--title>td {
+            font-weight: normal;
+            padding-bottom: 1em;
     }
     &--table {
         &__entree{
