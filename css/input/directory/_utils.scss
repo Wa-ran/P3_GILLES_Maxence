@@ -68,7 +68,7 @@ $resto: (
                 font-size: 2em;
                 margin: 0;
             }
-            @media (max-width: 380px) {
+            @media (max-width: 320px) {
                 font-size: 0.4rem;
             }
             @media (max-width: 480px) {
@@ -84,5 +84,38 @@ $resto: (
                 font-size: 2rem;
             }
         }
+        a .#{$name} {
+            @media (orientation:portrait) {
+                font-size: 2rem;
+            }
+            &:hover * {
+                animation: menu 1s forwards;
+            }
+        }
+    }
+}
+
+@keyframes menu {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
+        opacity: 0.5;
+    }
+}
+
+@keyframes next {
+    0%, 25% {
+        transform: translateY(0);
+    }
+    12.5% {
+        transform: translateY(-50%);
+    }
+}
+
+@keyframes footer {
+    50% {
+        transform: translateX(2%);
     }
 }
