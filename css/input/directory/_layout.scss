@@ -98,23 +98,7 @@ article {
                 font-size: 1.5em;
             }
         }
-        .table--title {
-            >td {
-                font-weight: bold;
-                font-size: 1.2em;
-                >div {
-                    padding-top: 1em;
-                    width: 100%;
-                    text-align: center;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    img {
-                    width: 20vw;
-                    }
-                }
-            }
-        }
+
         @media (max-width:500px) {
             width: 90vw;
             padding: 2rem 2%;
@@ -122,6 +106,20 @@ article {
                 padding: 0;
             }
         }
+    }
+}
+
+.table--title {
+    font-weight: bold;
+    font-size: 1.5em;
+    padding-top: 1em;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+    width: 30vw;
     }
 }
 
@@ -158,9 +156,6 @@ article {
     table tr td {
         padding: 1rem;
     }
-    .table--title>td {
-        font-size: 1.5em;
-    }
     .article--footer {
         display: flex;
         justify-content: flex-start;
@@ -182,9 +177,10 @@ article {
     td {
         font-family: 'DM Serif Text', sans-serif;
     }
-    .table--title>td {
-            font-weight: normal;
-            padding-bottom: 1em;
+    .table--title {
+        font-family: 'DM Serif Text', sans-serif;
+        font-weight: normal;
+        padding-bottom: 1em;
     }
     .entree{
         color: #C67412;
