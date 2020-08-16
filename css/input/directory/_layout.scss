@@ -28,7 +28,7 @@ article {
     }
     @for $pnt from 1 through 3 {
         .pnt#{$pnt} {
-            animation: next 3s ease-in-out 150ms*$pnt infinite;
+            animation: next 3s ease-in-out 200ms*$pnt infinite;
             margin: 0.3rem;
         }
     }
@@ -96,6 +96,7 @@ article {
             }
             td:nth-child(2) {
                 font-size: 1.5em;
+                text-align: right;
             }
         }
 
