@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch ./css/input/main.scss:./css/main.css",
-    "sasscomp": "sass --watch ./css/input/main.scss:./css/main.css --style compressed",
+    "sasscomp": "sass ./css/input/main.scss:./css/main.css --style compressed",
     "prefix": "postcss ./css/main.css --use autoprefixer -d ./css/prefixed/"
   },
   "repository": {
@@ -14,6 +14,7 @@
   },
   "author": "Wa-ran",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/Wa-ran/P3_GILLES_Maxence/issues"
   },

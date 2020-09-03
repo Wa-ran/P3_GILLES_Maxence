@@ -37,6 +37,12 @@ article {
 
 @include resto;
 
+@media (max-width: 480px) {
+    .menu--smallwp {
+        font-size: 2em;
+    }
+}
+
 
 .note-enchantee img {
     width: 2.5em;
@@ -101,7 +107,7 @@ article {
         }
 
         @media (max-width:500px) {
-            width: 90vw;
+            width: 87vw;
             padding: 2rem 2%;
             table {
                 padding: 0;

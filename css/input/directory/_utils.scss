@@ -69,24 +69,24 @@ $resto: (
                 margin: 0;
             }
             @media (max-width: 320px) {
-                font-size: 0.4rem;
+                font-size: 0.7em;
             }
-            @media (max-width: 480px) {
-                font-size: 0.7rem;
+            @media (max-width: 480px) and (min-width: 321px) {
+                font-size: 0.8em;
             }
             @media (max-width: 768px) and (min-height: 320px) and (min-width: 481px) {
-                font-size: 1rem;
+                font-size: 1em;
             }
             @media (max-width: 1024px) and (min-height: 768px) and (min-width: 769px) {
-                font-size: 1.5rem;
+                font-size: 1.5em;
             }
             @media (min-width: 1025px) and (min-height: 1024px) {
-                font-size: 2rem;
+                font-size: 2em;
             }
         }
         a .#{$name} {
-            @media (orientation:portrait) {
-                font-size: 2rem;
+            @media (orientation:portrait) and (min-width: 480px) {
+                font-size: 1.5em;
             }
             &:hover * {
                 animation: menu 1s forwards;
