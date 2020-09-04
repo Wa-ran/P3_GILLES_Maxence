@@ -86,22 +86,35 @@ $resto: (
         }
         a .#{$name} {
             @media (orientation:portrait) and (min-width: 480px) {
-                font-size: 1.5em;
+                font-size: 1.5em; 
             }
             &:hover * {
-                animation: menu 1s forwards;
+                animation: menu-in 1s;
+            }
+            * {
+                animation: menu-out 500ms;
             }
         }
     }
 }
 
-@keyframes menu {
+@keyframes menu-in {
     from {
         transform: scale(1);
     }
     to {
         transform: scale(1.2);
         opacity: 0.5;
+    }
+}
+
+@keyframes menu-out {
+    from {
+        transform: scale(1.2);
+        opacity: 0.5;
+    }
+    to {
+        transform: scale(1);
     }
 }
 
