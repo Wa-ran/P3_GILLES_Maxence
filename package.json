@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch ./css/input/main.scss:./css/main.css",
-    "sasscomp": "sass ./css/input/main.scss:./css/main.css --style compressed",
+    "comp": "sass ./css/input/main.scss:./css/main.css --style compressed",
     "prefix": "postcss ./css/main.css --use autoprefixer -d ./css/prefixed/"
   },
   "repository": {

@@ -130,24 +130,22 @@ article {
     }
 }
 
-.entree, .plat, .dessert {
-    img + div {
-        position: relative;
-        &::after{
+.table--title {
+    &.entree, &.plat, &.dessert {
+        > div::after{
             content: "";
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            position: absolute;
             border-bottom: solid 2px black;
             transform-origin: 0;
             transform: scaleX(0);
             transition: transform 500ms;
         }
-    }
-    &:hover img + div::after {
-        transform: scaleX(1);
+        &:hover > div::after {
+            transform: scaleX(1);
+        }
     }
 }
 
@@ -191,19 +189,19 @@ article {
     }
     .entree{
         color: #C67412;
-        img + div::after {
+        > div::after {
             border-color: #C67412;
         }
     }
     .plat{
         color: #A56799;
-        img + div::after {
+        > div::after {
             border-color: #A56799;
         }
     }
     .dessert{
         color: #6E4CCC;
-        img + div::after {
+        > div::after {
             border-color: #6E4CCC;
         }
     }
