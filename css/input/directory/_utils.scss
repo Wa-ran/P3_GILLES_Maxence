@@ -89,7 +89,7 @@ $resto: (
                 font-size: 1.5em; 
             }
             &:hover * {
-                animation: menu-in 1s;
+                animation: menu-in 1s forwards;
             }
             * {
                 animation: menu-out 500ms;
