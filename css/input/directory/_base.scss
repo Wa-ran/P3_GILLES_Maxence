@@ -1,5 +1,6 @@
 html, body {
     height: 100%;
+    overflow-x: none;
 }
 
 body {
@@ -54,4 +55,20 @@ footer {
 a {
     @include text;
     text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    background-color: transparent;
+    width: 5px;
+    // overflow-y: overlay;
+    // border: none;
+    // border-radius: 5px;
+    // width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: $color-prime;
+}
+::-webkit-scrollbar-thumb {
+    background: $color-text;
+    border-radius: 5px;
 }
